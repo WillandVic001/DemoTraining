@@ -6,7 +6,10 @@ Feature: As a user, I want to be
   Scenario: Login Datable Examples
     Given I am on the home page
     When I enter my Username and Password details as below
-      |       wegitme      |      12345678      |
+      |       wegit     |      12345678      |
     And I click login
     Then Homepage is displayed
 
+
+    # Write how to have the repository on your machine
+  # This is basically doing "git clone"
