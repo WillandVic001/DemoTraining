@@ -1,0 +1,266 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7135419821,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyFirstTest.StartSession()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login with parameter",
+        "description": "",
+        "id": "as-a-user,-i-want-to-be;login-with-parameter;login-details;2",
+        "after": [
+          {
+            "result": {
+              "duration": 595529894,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyFirstTest.EndSession()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14176544817,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the home page",
+            "match": {
+              "location": "MyFirstTest.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 167727544,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter my \"Username\" as \"wegit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 12
+                },
+                {
+                  "val": "wegit",
+                  "offset": 26
+                }
+              ],
+              "location": "ExampleTableScenarioStepDef.i_enter_my_as(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125202100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter my \"Password\" as \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 12
+                },
+                {
+                  "val": "12345678",
+                  "offset": 26
+                }
+              ],
+              "location": "ExampleTableScenarioStepDef.i_enter_my_as(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7164016300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click login",
+            "match": {
+              "location": "MyFirstTest.i_click_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7009169556,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Homepage is displayed",
+            "match": {
+              "location": "MyFirstTest.homepage_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@gmail"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3853661290,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyFirstTest.StartSession()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login with parameter",
+        "description": "",
+        "id": "as-a-user,-i-want-to-be;login-with-parameter;login-details;3",
+        "after": [
+          {
+            "result": {
+              "duration": 689259102,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyFirstTest.EndSession()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11410317327,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the home page",
+            "match": {
+              "location": "MyFirstTest.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 145326415,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter my \"Username\" as \"wegitme\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 12
+                },
+                {
+                  "val": "wegitme",
+                  "offset": 26
+                }
+              ],
+              "location": "ExampleTableScenarioStepDef.i_enter_my_as(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109795661,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter my \"Password\" as \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 12
+                },
+                {
+                  "val": "12345678",
+                  "offset": 26
+                }
+              ],
+              "location": "ExampleTableScenarioStepDef.i_enter_my_as(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5911497267,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click login",
+            "match": {
+              "location": "MyFirstTest.i_click_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7008636034,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Homepage is displayed",
+            "match": {
+              "location": "MyFirstTest.homepage_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@gmail"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I want to be",
+    "description": "able to login using my username and\r\npassword and confirm am on the home page",
+    "id": "as-a-user,-i-want-to-be",
+    "keyword": "Feature",
+    "uri": "ExampleTablesScenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@gmail"
+      }
+    ]
+  }
+]
