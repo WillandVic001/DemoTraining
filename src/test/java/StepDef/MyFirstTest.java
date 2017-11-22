@@ -16,8 +16,7 @@ public class MyFirstTest {
     MyFirstPage LoginPage = new MyFirstPage();
 
     @Before
-    public void StartSession()
-    {
+    public void StartSession() {
         SetDriver.set_driver("firefox");
     }
 
@@ -45,7 +44,6 @@ public class MyFirstTest {
     @Then("^Homepage is displayed$")
     public void homepage_is_displayed() throws Throwable {
         LoginPage.ConfirmHomePage();
-        SetDriver.CaptureScreenshot001();
 
     }
 

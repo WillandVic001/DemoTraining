@@ -3,12 +3,12 @@ Feature: As a user,
   the cursor on elements
 
   Background: login
-    Given I am on the "Login" page
-    When I enter my "Username"
-    And I enter my "Password"
+    Given I am on the home page
+    When I enter my Username and Password details as below
+      |       Montego001     |      12345678      |
     And I click login
     Then Homepage is displayed
 
   Scenario: Mouse hover
     Given I mouse hover "On All" nav bar
-    Then "Contact Support" page is displayed
+    Then "Home" page is displayed

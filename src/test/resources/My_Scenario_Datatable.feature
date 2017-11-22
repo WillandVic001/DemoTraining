@@ -6,7 +6,7 @@ Feature: As a user, I want to be
   Scenario: Login Datable Examples
     Given I am on the home page
     When I enter my Username and Password details as below
-      |       wegit     |      12345678      |
+      |       montego001     |      12345678      |
     And I click login
     Then Homepage is displayed
 
