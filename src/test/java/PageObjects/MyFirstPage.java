@@ -25,6 +25,8 @@ public class MyFirstPage extends ManageDriver implements MyFirstTestPage {
     String UsernameData = "wegit";
     String PasswordData = "12345678";
 
+   //  Anything that has double quote in java and all major Object oriented Programming is a String
+
 
     public void BaseUrl() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

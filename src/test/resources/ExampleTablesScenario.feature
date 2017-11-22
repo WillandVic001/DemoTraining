@@ -11,8 +11,8 @@ Feature: As a user, I want to be
     Then Homepage is displayed
 
     Examples:
-    | Username_Details   | Password_Details   |
-    |       wegit        |      12345678      |
-    |       wegitme      |      12345678      |
+    | Username_Details        | Password_Details   |
+    |       montego001        |      12345678      |
+    |       wegitme           |      12345678      |
 
     #Assignment please add mini 3 more login user details in your own test

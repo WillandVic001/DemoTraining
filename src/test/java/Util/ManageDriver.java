@@ -1,10 +1,18 @@
 package Util;
 
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class ManageDriver {
     public static WebDriver driver;
@@ -18,12 +26,20 @@ public class ManageDriver {
             if (browser.equalsIgnoreCase("firefox")) {
                 System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\drivers\\geckodriver.exe");
                 driver = new FirefoxDriver();
-            } else if (browser.equalsIgnoreCase("chrome")) {
+            }if (browser.equalsIgnoreCase("chrome")) {
                 System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
-
+            } else if (browser.equalsIgnoreCase("opera")) {
+                    System.setProperty("webdriver.opera.driver", "C:\\Program Files\\drivers\\operadriver.exe");
+                    driver = new ChromeDriver();
             }
         }
+    }
+
+    public void CaptureScreenshot001() throws IOException {
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+        File MyFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(MyFile, new File("C:\\Users\\user\\IdeaProjects\\SeleniumBDDTraining\\Screenshot\\Captured\\Test"+ timeStamp +".png"));
     }
 
     public void browser_setting() {
@@ -33,4 +49,6 @@ public class ManageDriver {
        driver.quit();
         driver = null;
     }
+
+
 }

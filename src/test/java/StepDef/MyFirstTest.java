@@ -8,6 +8,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import java.io.IOException;
+
 public class MyFirstTest {
 
     ManageDriver SetDriver = new ManageDriver();
@@ -16,14 +18,13 @@ public class MyFirstTest {
     @Before
     public void StartSession()
     {
-        SetDriver.set_driver("chrome");
+        SetDriver.set_driver("firefox");
     }
 
 
     @Given("^I am on the home page$")
     public void i_am_on_the_home_page() throws Throwable {
        LoginPage.BaseUrl();
-       Thread.sleep(5000);
     }
     /*
     @When("^I enter my username$")
@@ -40,15 +41,17 @@ public class MyFirstTest {
     @When("^I click login$")
     public void i_click_login() throws Throwable {
         LoginPage.ClickLogin();
-        Thread.sleep(5000);
     }
     @Then("^Homepage is displayed$")
     public void homepage_is_displayed() throws Throwable {
         LoginPage.ConfirmHomePage();
+        SetDriver.CaptureScreenshot001();
+
     }
 
     @After
-    public  void EndSession(){
-    SetDriver.close_browser();
+    public  void EndSession() throws IOException, InterruptedException {
+         SetDriver.CaptureScreenshot001();
+        SetDriver.close_browser();
     }
 }
