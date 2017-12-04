@@ -2,8 +2,8 @@ Feature: As a user, I want to be
   able to login using my username and
   password and confirm am on the home page
 
-
-  Scenario Outline: Login
+@TestCompleted
+Scenario Outline: Login
     Given I am on the home page
     When I enter my "Username" as "<Username_Details>"
     And I enter my "Password" as "<Password_Details>"

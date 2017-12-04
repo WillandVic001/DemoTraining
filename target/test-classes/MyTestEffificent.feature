@@ -4,6 +4,8 @@ Feature: As a user, I want to be
   password and confirm am on the home page
 
 
+
+  # test is been deprecated meaning there is a latest test that has already got the coverage.
   Scenario: Login
     Given I am on the home page
     When I enter my "Username"

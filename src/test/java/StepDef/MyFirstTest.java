@@ -49,7 +49,7 @@ public class MyFirstTest {
 
     @After
     public  void EndSession() throws IOException, InterruptedException {
-         SetDriver.CaptureScreenshot001();
+        SetDriver.TakeScreenShot();
         SetDriver.close_browser();
     }
 }

@@ -10,7 +10,6 @@ public class ExampleTableScenarioStepDef {
     @When("^I enter my \"([^\"]*)\" as \"([^\"]*)\"$")
     public void i_enter_my_as(String value1, String value2) throws Throwable {
         switch (value1) {
-
             case "Username":
                 ExamplesScenario_Obj.Send_Username(value2);
                 Thread.sleep(2000);

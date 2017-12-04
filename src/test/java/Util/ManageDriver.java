@@ -26,21 +26,25 @@ public class ManageDriver {
             if (browser.equalsIgnoreCase("firefox")) {
                 System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\drivers\\geckodriver.exe");
                 driver = new FirefoxDriver();
-            }if (browser.equalsIgnoreCase("chrome")) {
+            }
+            if (browser.equalsIgnoreCase("chrome")) {
                 System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
             } else if (browser.equalsIgnoreCase("opera")) {
-                    System.setProperty("webdriver.opera.driver", "C:\\Program Files\\drivers\\operadriver.exe");
-                    driver = new ChromeDriver();
+                System.setProperty("webdriver.opera.driver", "C:\\Program Files\\drivers\\operadriver.exe");
+                driver = new ChromeDriver();
             }
         }
     }
 
-    public void CaptureScreenshot001() throws IOException {
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-        File MyFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(MyFile, new File("C:\\Users\\user\\IdeaProjects\\SeleniumBDDTraining\\Screenshot\\Captured\\Test"+ timeStamp +".png"));
+        public void TakeScreenShot() throws IOException {
+            String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+            File MyFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(MyFile, new File("C:\\Users\\user\\IdeaProjects\\SeleniumBDDTraining\\target\\Screenshot\\UAT Demo"+ timeStamp +".png"));
     }
+
+
+
 
     public void browser_setting() {
         driver.manage().window().maximize();

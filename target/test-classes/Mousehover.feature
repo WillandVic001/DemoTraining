@@ -9,6 +9,7 @@ Feature: As a user,
     And I click login
     Then Homepage is displayed
 
+    @TestCompleted
   Scenario: Mouse hover
-    Given I mouse hover "On All" nav bar
+    Given I  hover the mouse "On All" nav bar
     Then "Home" page is displayed

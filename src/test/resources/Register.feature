@@ -8,6 +8,7 @@ Feature: As a user,
     When I click on "Register" button
     Then I am on the "Register" page
 
+  @TestCompleted
   Scenario: Register a user
     Given I am on the "Register" page
     And I enter my "email" in the "email" field

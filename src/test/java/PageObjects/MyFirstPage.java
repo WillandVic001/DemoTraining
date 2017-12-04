@@ -22,7 +22,7 @@ public class MyFirstPage extends ManageDriver implements MyFirstTestPage {
 
 
     String URL = "http://automatetillinfinity.co.uk/";
-    String UsernameData = "wegit";
+    String UsernameData = "montego001";
     String PasswordData = "12345678";
 
    //  Anything that has double quote in java and all major Object oriented Programming is a String
@@ -69,6 +69,7 @@ public void pageOBJ_Logout() throws InterruptedException {
     }
 
     public void Send_Username(String username_text){
+
         driver.findElement(UsernameTextField).sendKeys(username_text);
     }
 }
