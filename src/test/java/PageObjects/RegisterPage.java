@@ -23,11 +23,11 @@ public void ClickRegisterButton(){
 
    }
 public void EnterEmail() {
-       driver.findElement(EmailTextField).sendKeys("AUDITT04@gmail.com");
+       driver.findElement(EmailTextField).sendKeys("AUDITT05@gmail.com");
 
    }
 public void EnterUsername() {
-    driver.findElement(UserNameTexField).sendKeys("Reloaded244");
+    driver.findElement(UserNameTexField).sendKeys("Reloaded245");
 
 }
 public void EnterPassword() {
