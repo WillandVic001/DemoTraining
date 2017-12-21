@@ -33,3 +33,5 @@ public class Reuseable extends ManageDriver {
 }
 
 
+/// What are dependencies is selenium framework with the file name POM.XML
+//  This is the test resources required in building a franework.

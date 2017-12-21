@@ -37,10 +37,10 @@ public class ManageDriver {
         }
     }
 
-        public void TakeScreenShot() throws IOException {
+        public void TakeScreenShot(){
             String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
             File MyFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(MyFile, new File("C:\\Users\\user\\IdeaProjects\\SeleniumBDDTraining\\target\\Screenshot\\UAT Demo"+ timeStamp +".png"));
+            FileUtils.copyFile(MyFile, new File());
     }
 
 
